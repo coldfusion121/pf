@@ -140,9 +140,35 @@ body {
   box-shadow: 5px 5px 30px 7px #03094c57, -5px -5px 30px 7px #28aace59;
 }
 
+.card-7 {
+  background: #6adeff;
+  box-shadow: 5px 5px 30px 7px #5fd2f3, -5px -5px 30px 7px #5fd2f3;
+}
+
+.card-8 {
+  background: #376400;
+  box-shadow: 5px 5px 30px 7px #0062276b, -5px -5px 30px 7px #0062276b;
+}
+
+.card-9 {
+  background: #ff8cf2;
+  box-shadow: 5px 5px 30px 7px #b200df5e, -5px -5px 30px 7px #b200df5e;
+}
+
+.card-10 {
+  background: #00ffbc;
+  box-shadow: 5px 5px 30px 7px #00df595e, -5px -5px 30px 7px #00df595e;
+}
+
+.card-11 {
+  background: #ff7d14;
+  box-shadow: 5px 5px 30px 7px #9b7a5f, -5px -5px 30px 7px #9b7a5f;
+}
+
+
+
 @media all and (max-width: 500px) {
   .card-list {
-    /* On small screens, we are no longer using row direction but column */
     flex-direction: column;
   }
 }
