@@ -1,12 +1,26 @@
-<header class="container p-1 d-inline-flex justify-content-between cabecera">
-  <div>
-    <img src="./assets/icons/logo.png" alt="logo" class="favicon" />
-    <span>Argentina Programa</span>
+<header>
+  <link
+    href="https://fonts.googleapis.com/css?family=Roboto:100"
+    rel="stylesheet"
+  />
+  <div class="introTextBox">
+    <p id="head1" class="header">¡Hola, Bienvenid@!</p>
+    <p id="head2" class="header">
+      Soy <span class="nombre">Lucas Joel Mac Gregor</span>
+    </p>
+    <p id="head3" class="header">Software Developer</p>
+    <p id="head4" class="header"><button class="boton">Continuar</button></p>
+    <p id="head5" class="header"></p>
   </div>
-  <div class="align-self-center">
-    <span class="ml-auto">Hola, Usuario!</span>
-    <button type="button" class="btn btn-primary">Login</button>
-  </div>
+  <div class="light x1"></div>
+  <div class="light x2"></div>
+  <div class="light x3"></div>
+  <div class="light x4"></div>
+  <div class="light x5"></div>
+  <div class="light x6"></div>
+  <div class="light x7"></div>
+  <div class="light x8"></div>
+  <div class="light x9"></div>
 </header>
 <div class="container">
   <div class="p-4 rounded-3 border shadow-lg banner">
@@ -37,15 +51,18 @@
     <h2 class="titulo">Experiencia Laboral</h2>
     <div class="container d-flex p-2">
       <img
-        src="./assets/images/cei.jfif"
+        src="./assets/images/globant.png"
         alt="Logo Empresa"
         class="rounded img-fluid col-3 educLogo"
       />
       <div class="col-9 p-3">
-        <h6 class="subTitulo">Centro de Estudiantes de Ingeniería</h6>
+        <h6 class="subTitulo">Globant - Sistemas Globales</h6>
         <p class="expText">
-          Atención al Cliente - Mantenimiento <br />
-          Atención a estudiantes y mantenimiento de los equipos del lugar.
+          Fullstack Developer <br />
+          Desarrollo frontend con Angular - Bootstrap. <br />
+          Desarrollo backend con Node.js - MySQL. <br />
+          Unit testing con Karma - Jasmine para frontend y Mocha - Chai para
+          backend.
         </p>
       </div>
     </div>
@@ -60,7 +77,7 @@
         <p class="expText">
           Soporte técnico - Desarrollo web <br />
           Encargado del área de Reparación de PC, redes informáticas y
-          desarrollo web. Desarrollo web para emprendimientos y hoteles.
+          desarrollo web para emprendimientos y hoteles.
         </p>
       </div>
     </div>
@@ -91,6 +108,7 @@
         <h6 class="subTitulo">Codo a Codo 4.0</h6>
         <p>
           Fullstack Developer. <br />
+          Unity Developer. <br />
           Estudio completado.
         </p>
       </div>
@@ -281,6 +299,53 @@
   </div>
   <div class="container p-3">
     <h3 class="titulo">Proyectos</h3>
+    <div class="container p-2">
+      <h5 class="subtitulo col-12">Globant Training Proyect</h5>
+      <div class="container d-flex p-2">
+        <img
+          src="./assets/images/portf.jpg"
+          alt="Screenshot del proyecto"
+          class="col-3 rounded proyLogo"
+        />
+        <p class="proyectoText col-9 p-4">
+          Proyecto de training para pasantía en Globant. <br />
+          El mismo consta de uso de distintas funcionalidades de Angular como
+          Bindings, Inputs/Outputs, Services, Guards, Routing, Interceptors y
+          más.
+          <br />
+          También se utilizó Node.js junto al framework Express.js y una base de
+          datos en MySQL. * <br />
+          Tanto frontend como backend cuentan con unit tests con un coverage
+          superior al 90% y 80% respecivamente. <br />
+          Posteriormente se dockerizó la aplicación con fines de aprendizaje.
+          <br />
+          <br />
+          <span>
+            Actualmente el deploy solo consta de un frontend con un mock del
+            backend. La funcionalidades de carga/descarga de archivos excel
+            estan deshabilitadas.
+          </span>
+        </p>
+      </div>
+
+      <div class="align-self-end col-12">
+        <span class="badge bg-primary">HTML</span>
+        <span class="badge bg-success">CSS3</span>
+        <span class="badge bg-warning">TypeScript</span>
+        <span class="badge bg-danger">Angular</span>
+        <span class="badge bg-info">Bootstrap</span>
+        <span class="badge bg-primary">Docker</span>
+        <span class="badge bg-success">Node.js</span>
+        <span class="badge bg-primary">MySQL</span>
+        <span class="badge bg-success">Unit Tested</span>
+      </div>
+      <a
+        href="https://lucasjoel.netlify.app"
+        target="_blank"
+        class="btn btn-primary mt-2"
+        >Visitar</a
+      >
+    </div>
     <div class="container p-2">
       <h5 class="subtitulo col-12">Tu Tienda</h5>
       <div class="container d-flex p-2">
