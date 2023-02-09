@@ -543,7 +543,7 @@ button:focus {
   }
 }
 
-header {
+#intro {
   background: radial-gradient(#a23982, #1f1013);
   position: relative;
   height: 100vh;

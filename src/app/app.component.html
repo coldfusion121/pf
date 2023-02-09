@@ -1,4 +1,4 @@
-<header>
+<section id="intro">
   <link
     href="https://fonts.googleapis.com/css?family=Roboto:100"
     rel="stylesheet"
@@ -9,8 +9,9 @@
       Soy <span class="nombre">Lucas Joel Mac Gregor</span>
     </p>
     <p id="head3" class="header">Software Developer</p>
-    <p id="head4" class="header"><button class="boton">Continuar</button></p>
-    <p id="head5" class="header"></p>
+    <p id="head4" class="header">
+      <button class="boton" (click)="scrollTo(+1)">Continuar</button>
+    </p>
   </div>
   <div class="light x1"></div>
   <div class="light x2"></div>
@@ -21,64 +22,68 @@
   <div class="light x7"></div>
   <div class="light x8"></div>
   <div class="light x9"></div>
-</header>
-<div class="container">
-  <div class="p-4 rounded-3 border shadow-lg banner">
-    <div class="prueba">
-      <img
-        src="./assets/images/cv.jpeg"
-        alt="Foto chica"
-        class="fotoChica rounded-circle"
-      />
-    </div>
-  </div>
-</div>
-<div class="container d-flex p-5 mt-3">
-  <h4 class="col-3 align-self-center">
-    Lucas Joel <br />
-    Mac Gregor
-  </h4>
-  <div class="col-9 centrado">
-    <h1>Fullstack Developer</h1>
-    <p class="aboutText">
-      Desarrollador muldisciplinario amante de la programación. Siempre buscando
-      la mejor forma de cumplir objetivos.
-    </p>
-  </div>
-</div>
-<div class="container p-3">
-  <div class="container p-3">
-    <h2 class="titulo">Experiencia Laboral</h2>
-    <div class="container d-flex p-2">
-      <img
-        src="./assets/images/globant.png"
-        alt="Logo Empresa"
-        class="rounded img-fluid col-3 educLogo"
-      />
-      <div class="col-9 p-3">
-        <h6 class="subTitulo">Globant - Sistemas Globales</h6>
-        <p class="expText">
-          Fullstack Developer <br />
-          Desarrollo frontend con Angular - Bootstrap. <br />
-          Desarrollo backend con Node.js - MySQL. <br />
-          Unit testing con Karma - Jasmine para frontend y Mocha - Chai para
-          backend.
-        </p>
+</section>
+<section id="aboutMe">
+  <div class="container">
+    <div class="p-4 rounded-3 border shadow-lg banner">
+      <div class="prueba">
+        <img
+          src="./assets/images/cv.jpeg"
+          alt="Foto chica"
+          class="fotoChica rounded-circle"
+        />
       </div>
     </div>
-    <div class="container d-flex p-2">
-      <img
-        src="./assets/images/sinapsis.jpg"
-        alt="Logo Empresa"
-        class="rounded img-fluid col-3 educLogo"
-      />
-      <div class="col-9 p-3">
-        <h6 class="subTitulo">Sinapsis Solutions</h6>
-        <p class="expText">
-          Soporte técnico - Desarrollo web <br />
-          Encargado del área de Reparación de PC, redes informáticas y
-          desarrollo web para emprendimientos y hoteles.
-        </p>
+  </div>
+  <div class="container d-flex p-5 mt-3">
+    <h4 class="col-3 align-self-center">
+      Lucas Joel <br />
+      Mac Gregor
+    </h4>
+    <div class="col-9 centrado">
+      <h1>Fullstack Developer</h1>
+      <p class="aboutText">
+        Desarrollador muldisciplinario amante de la programación. Siempre
+        buscando la mejor forma de cumplir objetivos.
+      </p>
+    </div>
+  </div>
+</section>
+<section id="expEd">
+  <div class="container p-3">
+    <div class="container p-3">
+      <h2 class="titulo">Experiencia Laboral</h2>
+      <div class="container d-flex p-2">
+        <img
+          src="./assets/images/globant.png"
+          alt="Logo Empresa"
+          class="rounded img-fluid col-3 educLogo"
+        />
+        <div class="col-9 p-3">
+          <h6 class="subTitulo">Globant - Sistemas Globales</h6>
+          <p class="expText">
+            Fullstack Developer <br />
+            Desarrollo frontend con Angular - Bootstrap. <br />
+            Desarrollo backend con Node.js - MySQL. <br />
+            Unit testing con Karma - Jasmine para frontend y Mocha - Chai para
+            backend.
+          </p>
+        </div>
+      </div>
+      <div class="container d-flex p-2">
+        <img
+          src="./assets/images/sinapsis.jpg"
+          alt="Logo Empresa"
+          class="rounded img-fluid col-3 educLogo"
+        />
+        <div class="col-9 p-3">
+          <h6 class="subTitulo">Sinapsis Solutions</h6>
+          <p class="expText">
+            Soporte técnico - Desarrollo web <br />
+            Encargado del área de Reparación de PC, redes informáticas y
+            desarrollo web para emprendimientos y hoteles.
+          </p>
+        </div>
       </div>
     </div>
   </div>
@@ -114,290 +119,287 @@
       </div>
     </div>
   </div>
-  <div class="container p-3">
-    <h2 class="titulo">Hard Skills</h2>
-    <div class="cards-list">
-      <div class="card card-1">
-        <div class="card_image">
-          <img src="./assets/images/html.svg" />
-        </div>
-        <div class="card_title title-white">
-          <p>HTML 5</p>
+</section>
+<div class="container p-3">
+  <h2 class="titulo">Hard Skills</h2>
+  <div class="cards-list">
+    <div class="card card-1">
+      <div class="card_image">
+        <img src="./assets/images/html.svg" />
+      </div>
+      <div class="card_title title-white">
+        <p>HTML 5</p>
+      </div>
+    </div>
+    <div class="card card-2">
+      <div class="card_image">
+        <img src="./assets/images/css.svg" />
+      </div>
+      <div class="card_title title-white">
+        <p>CSS 3</p>
+      </div>
+    </div>
+    <div class="card card-3">
+      <div class="card_image">
+        <img src="./assets/images/js.svg" />
+      </div>
+      <div class="card_title title-white">
+        <p>JS/TS</p>
+      </div>
+    </div>
+    <div class="card card-4">
+      <div class="card_image">
+        <img src="./assets/images/angular.svg" />
+      </div>
+      <div class="card_title title-white">
+        <p>Angular</p>
+      </div>
+    </div>
+    <div class="card card-5">
+      <div class="card_image">
+        <img src="./assets/images/python.svg" />
+      </div>
+      <div class="card_title title-white">
+        <p>Python</p>
+      </div>
+    </div>
+    <div class="card card-6">
+      <div class="card_image">
+        <img src="./assets/images/mysql.svg" />
+      </div>
+      <div class="card_title title-white">
+        <p>MySQL</p>
+      </div>
+    </div>
+    <div class="card card-7">
+      <div class="card_image">
+        <img src="./assets/images/docker.png" />
+      </div>
+      <div class="card_title title-white">
+        <p>Docker</p>
+      </div>
+    </div>
+    <div class="card card-8">
+      <div class="card_image">
+        <img src="./assets/images/node.png" />
+      </div>
+      <div class="card_title title-white">
+        <p>Node.js</p>
+      </div>
+    </div>
+    <div class="card card-9">
+      <div class="card_image">
+        <img src="./assets/images/jasmine.svg" />
+      </div>
+      <div class="card_title title-white">
+        <p>Jasmine</p>
+      </div>
+    </div>
+    <div class="card card-10">
+      <div class="card_image">
+        <img src="./assets/images/karma.png" />
+      </div>
+      <div class="card_title title-white">
+        <p>Karma</p>
+      </div>
+    </div>
+    <div class="card card-11">
+      <div class="card_image">
+        <img src="./assets/images/mocha.svg" />
+      </div>
+      <div class="card_title title-white">
+        <p>Mocha</p>
+      </div>
+    </div>
+  </div>
+  <h2 class="titulo mt-5">Soft Skills</h2>
+  <div class="contenedor-soft">
+    <div class="card-soft">
+      <div class="face face1">
+        <div class="content">
+          <img src="assets/icons/teamwork.svg" />
+          <h3>Trabajo en equipo</h3>
         </div>
       </div>
-      <div class="card card-2">
-        <div class="card_image">
-          <img src="./assets/images/css.svg" />
-        </div>
-        <div class="card_title title-white">
-          <p>CSS 3</p>
-        </div>
-      </div>
-      <div class="card card-3">
-        <div class="card_image">
-          <img src="./assets/images/js.svg" />
-        </div>
-        <div class="card_title title-white">
-          <p>JS/TS</p>
-        </div>
-      </div>
-      <div class="card card-4">
-        <div class="card_image">
-          <img src="./assets/images/angular.svg" />
-        </div>
-        <div class="card_title title-white">
-          <p>Angular</p>
-        </div>
-      </div>
-      <div class="card card-5">
-        <div class="card_image">
-          <img src="./assets/images/python.svg" />
-        </div>
-        <div class="card_title title-white">
-          <p>Python</p>
-        </div>
-      </div>
-      <div class="card card-6">
-        <div class="card_image">
-          <img src="./assets/images/mysql.svg" />
-        </div>
-        <div class="card_title title-white">
-          <p>MySQL</p>
-        </div>
-      </div>
-      <div class="card card-7">
-        <div class="card_image">
-          <img src="./assets/images/docker.png" />
-        </div>
-        <div class="card_title title-white">
-          <p>Docker</p>
-        </div>
-      </div>
-      <div class="card card-8">
-        <div class="card_image">
-          <img src="./assets/images/node.png" />
-        </div>
-        <div class="card_title title-white">
-          <p>Node.js</p>
-        </div>
-      </div>
-      <div class="card card-9">
-        <div class="card_image">
-          <img src="./assets/images/jasmine.svg" />
-        </div>
-        <div class="card_title title-white">
-          <p>Jasmine</p>
-        </div>
-      </div>
-      <div class="card card-10">
-        <div class="card_image">
-          <img src="./assets/images/karma.png" />
-        </div>
-        <div class="card_title title-white">
-          <p>Karma</p>
-        </div>
-      </div>
-      <div class="card card-11">
-        <div class="card_image">
-          <img src="./assets/images/mocha.svg" />
-        </div>
-        <div class="card_title title-white">
-          <p>Mocha</p>
+      <div class="face face2">
+        <div class="content">
+          <p>
+            Ser parte de un equipo y progresar entre todos por un objetivo en
+            común.
+          </p>
         </div>
       </div>
     </div>
-    <h2 class="titulo mt-5">Soft Skills</h2>
-    <div class="contenedor-soft">
-      <div class="card-soft">
-        <div class="face face1">
-          <div class="content">
-            <img src="assets/icons/teamwork.svg" />
-            <h3>Trabajo en equipo</h3>
-          </div>
-        </div>
-        <div class="face face2">
-          <div class="content">
-            <p>
-              Ser parte de un equipo y progresar entre todos por un objetivo en
-              común.
-            </p>
-          </div>
+    <div class="card-soft">
+      <div class="face face1">
+        <div class="content">
+          <img src="assets/icons/comm.svg" />
+          <h3>Comunicación</h3>
         </div>
       </div>
-      <div class="card-soft">
-        <div class="face face1">
-          <div class="content">
-            <img src="assets/icons/comm.svg" />
-            <h3>Comunicación</h3>
-          </div>
-        </div>
-        <div class="face face2">
-          <div class="content">
-            <p>
-              Saber escuchar a otros y explicarse con facilidad para fomentar un
-              espacio ameno.
-            </p>
-          </div>
+      <div class="face face2">
+        <div class="content">
+          <p>
+            Saber escuchar a otros y explicarse con facilidad para fomentar un
+            espacio ameno.
+          </p>
         </div>
       </div>
-      <div class="card-soft">
-        <div class="face face1">
-          <div class="content">
-            <img src="assets/icons/init.svg" />
-            <h3>Iniciativa</h3>
-          </div>
-        </div>
-        <div class="face face2">
-          <div class="content">
-            <p>
-              Sumar novedosas ideas al equipo pensando en el futuro, siempre en
-              movimiento.
-            </p>
-          </div>
+    </div>
+    <div class="card-soft">
+      <div class="face face1">
+        <div class="content">
+          <img src="assets/icons/init.svg" />
+          <h3>Iniciativa</h3>
         </div>
       </div>
-      <div class="card-soft">
-        <div class="face face1">
-          <div class="content">
-            <img src="assets/icons/flex.svg" />
-            <h3>Flexibilidad</h3>
-          </div>
-        </div>
-        <div class="face face2">
-          <div class="content">
-            <p>Aceptar el cambio. Avanzar sin miedo a lo nuevo.</p>
-          </div>
+      <div class="face face2">
+        <div class="content">
+          <p>
+            Sumar novedosas ideas al equipo pensando en el futuro, siempre en
+            movimiento.
+          </p>
         </div>
       </div>
-      <div class="card-soft">
-        <div class="face face1">
-          <div class="content">
-            <img src="assets/icons/orga.svg" />
-            <h3>Organización</h3>
-          </div>
-        </div>
-        <div class="face face2">
-          <div class="content">
-            <p>Establecer tiempos claros y cumplirlos según lo establecido.</p>
-          </div>
+    </div>
+    <div class="card-soft">
+      <div class="face face1">
+        <div class="content">
+          <img src="assets/icons/flex.svg" />
+          <h3>Flexibilidad</h3>
         </div>
       </div>
-      <div class="card-soft">
-        <div class="face face1">
-          <div class="content">
-            <img src="assets/icons/creat.png" />
-            <h3>Creatividad</h3>
-          </div>
+      <div class="face face2">
+        <div class="content">
+          <p>Aceptar el cambio. Avanzar sin miedo a lo nuevo.</p>
         </div>
-        <div class="face face2">
-          <div class="content">
-            <p>Buscar soluciones únicas a problemas difíciles.</p>
-          </div>
+      </div>
+    </div>
+    <div class="card-soft">
+      <div class="face face1">
+        <div class="content">
+          <img src="assets/icons/orga.svg" />
+          <h3>Organización</h3>
+        </div>
+      </div>
+      <div class="face face2">
+        <div class="content">
+          <p>Establecer tiempos claros y cumplirlos según lo establecido.</p>
+        </div>
+      </div>
+    </div>
+    <div class="card-soft">
+      <div class="face face1">
+        <div class="content">
+          <img src="assets/icons/creat.png" />
+          <h3>Creatividad</h3>
+        </div>
+      </div>
+      <div class="face face2">
+        <div class="content">
+          <p>Buscar soluciones únicas a problemas difíciles.</p>
         </div>
       </div>
     </div>
   </div>
-  <div class="container p-3">
-    <h3 class="titulo">Proyectos</h3>
-    <div class="container p-2">
-      <h5 class="subtitulo col-12">Globant Training Proyect</h5>
-      <div class="container d-flex p-2">
-        <img
-          src="./assets/images/portf.jpg"
-          alt="Screenshot del proyecto"
-          class="col-3 rounded proyLogo"
-        />
-        <p class="proyectoText col-9 p-4">
-          Proyecto de training para pasantía en Globant. <br />
-          El mismo consta de uso de distintas funcionalidades de Angular como
-          Bindings, Inputs/Outputs, Services, Guards, Routing, Interceptors y
-          más.
-          <br />
-          También se utilizó Node.js junto al framework Express.js y una base de
-          datos en MySQL. * <br />
-          Tanto frontend como backend cuentan con unit tests con un coverage
-          superior al 90% y 80% respecivamente. <br />
-          Posteriormente se dockerizó la aplicación con fines de aprendizaje.
-          <br />
-          <br />
-          <span>
-            Actualmente el deploy solo consta de un frontend con un mock del
-            backend. La funcionalidades de carga/descarga de archivos excel
-            estan deshabilitadas.
-          </span>
-        </p>
-      </div>
+</div>
+<div class="container p-3">
+  <h3 class="titulo">Proyectos</h3>
+  <div class="container p-2">
+    <h5 class="subtitulo col-12">Globant Training Proyect</h5>
+    <div class="container d-flex p-2">
+      <img
+        src="./assets/images/portf.jpg"
+        alt="Screenshot del proyecto"
+        class="col-3 rounded proyLogo"
+      />
+      <p class="proyectoText col-9 p-4">
+        Proyecto de training para pasantía en Globant. <br />
+        El mismo consta de uso de distintas funcionalidades de Angular como
+        Bindings, Inputs/Outputs, Services, Guards, Routing, Interceptors y más.
+        <br />
+        También se utilizó Node.js junto al framework Express.js y una base de
+        datos en MySQL. * <br />
+        Tanto frontend como backend cuentan con unit tests con un coverage
+        superior al 90% y 80% respecivamente. <br />
+        Posteriormente se dockerizó la aplicación con fines de aprendizaje.
+        <br />
+        <br />
+        <span>
+          Actualmente el deploy solo consta de un frontend con un mock del
+          backend. La funcionalidades de carga/descarga de archivos excel estan
+          deshabilitadas.
+        </span>
+      </p>
+    </div>
 
-      <div class="align-self-end col-12">
-        <span class="badge bg-primary">HTML</span>
-        <span class="badge bg-success">CSS3</span>
-        <span class="badge bg-warning">TypeScript</span>
-        <span class="badge bg-danger">Angular</span>
-        <span class="badge bg-info">Bootstrap</span>
-        <span class="badge bg-primary">Docker</span>
-        <span class="badge bg-success">Node.js</span>
-        <span class="badge bg-primary">MySQL</span>
-        <span class="badge bg-success">Unit Tested</span>
-      </div>
-      <a
-        href="https://lucasjoel.netlify.app"
-        target="_blank"
-        class="btn btn-primary mt-2"
-        >Visitar</a
-      >
+    <div class="align-self-end col-12">
+      <span class="badge bg-primary">HTML</span>
+      <span class="badge bg-success">CSS3</span>
+      <span class="badge bg-warning">TypeScript</span>
+      <span class="badge bg-danger">Angular</span>
+      <span class="badge bg-info">Bootstrap</span>
+      <span class="badge bg-primary">Docker</span>
+      <span class="badge bg-success">Node.js</span>
+      <span class="badge bg-primary">MySQL</span>
+      <span class="badge bg-success">Unit Tested</span>
     </div>
-    <div class="container p-2">
-      <h5 class="subtitulo col-12">Tu Tienda</h5>
-      <div class="container d-flex p-2">
-        <img
-          src="./assets/images/tiendita.jpg"
-          alt="Screenshot del proyecto"
-          class="col-3 rounded proyLogo"
-        />
-        <p class="proyectoText col-9 p-4">
-          Demo de una tienda de ropa con carrito de compras y diversas
-          secciones.
-        </p>
-      </div>
-      <div class="align-self-end col-12">
-        <span class="badge bg-primary">HTML</span>
-        <span class="badge bg-success">CSS3</span>
-        <span class="badge bg-warning">TypeScript</span>
-        <span class="badge bg-danger">Angular</span>
-        <span class="badge bg-info">Bootstrap</span>
-      </div>
-      <a
-        href="https://tu-tienda.netlify.app"
-        target="_blank"
-        class="btn btn-primary mt-2"
-        >Visitar</a
-      >
+    <a
+      href="https://lucasjoel.netlify.app"
+      target="_blank"
+      class="btn btn-primary mt-2"
+      >Visitar</a
+    >
+  </div>
+  <div class="container p-2">
+    <h5 class="subtitulo col-12">Tu Tienda</h5>
+    <div class="container d-flex p-2">
+      <img
+        src="./assets/images/tiendita.jpg"
+        alt="Screenshot del proyecto"
+        class="col-3 rounded proyLogo"
+      />
+      <p class="proyectoText col-9 p-4">
+        Demo de una tienda de ropa con carrito de compras y diversas secciones.
+      </p>
     </div>
-    <div class="container p-2">
-      <h5 class="subtitulo col-12">Old Portfolio</h5>
-      <div class="container d-flex p-2">
-        <img
-          src="./assets/images/portf.jpg"
-          alt="Screenshot del proyecto"
-          class="col-3 rounded proyLogo"
-        />
-        <p class="proyectoText col-9 p-4">
-          Portfolio realizado como trabajo final para el curso de Codo a Codo
-          4.0.
-        </p>
-      </div>
-      <div class="align-self-end col-12">
-        <span class="badge bg-primary">HTML</span>
-        <span class="badge bg-success">CSS3</span>
-        <span class="badge bg-warning">JavaScript</span>
-        <span class="badge bg-info">Bootstrap</span>
-      </div>
-      <a
-        href="https://lucasjoel.netlify.app"
-        target="_blank"
-        class="btn btn-primary mt-2"
-        >Visitar</a
-      >
+    <div class="align-self-end col-12">
+      <span class="badge bg-primary">HTML</span>
+      <span class="badge bg-success">CSS3</span>
+      <span class="badge bg-warning">TypeScript</span>
+      <span class="badge bg-danger">Angular</span>
+      <span class="badge bg-info">Bootstrap</span>
     </div>
+    <a
+      href="https://tu-tienda.netlify.app"
+      target="_blank"
+      class="btn btn-primary mt-2"
+      >Visitar</a
+    >
+  </div>
+  <div class="container p-2">
+    <h5 class="subtitulo col-12">Old Portfolio</h5>
+    <div class="container d-flex p-2">
+      <img
+        src="./assets/images/portf.jpg"
+        alt="Screenshot del proyecto"
+        class="col-3 rounded proyLogo"
+      />
+      <p class="proyectoText col-9 p-4">
+        Portfolio realizado como trabajo final para el curso de Codo a Codo 4.0.
+      </p>
+    </div>
+    <div class="align-self-end col-12">
+      <span class="badge bg-primary">HTML</span>
+      <span class="badge bg-success">CSS3</span>
+      <span class="badge bg-warning">JavaScript</span>
+      <span class="badge bg-info">Bootstrap</span>
+    </div>
+    <a
+      href="https://lucasjoel.netlify.app"
+      target="_blank"
+      class="btn btn-primary mt-2"
+      >Visitar</a
+    >
   </div>
 </div>
