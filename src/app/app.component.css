@@ -42,11 +42,27 @@ body {
 .educLogo {
   max-width: 150px;
   max-height: 150px;
+  align-self: center;
+}
+
+.expText {
+  font-size: small;
+  display: flex;
+  align-items: center;
+  height: 70%;
 }
 
 .proyLogo {
   max-width: 270px;
   max-height: 270px;
+}
+
+.titulo {
+  text-align: center;
+}
+
+.boxHolder {
+  min-height: 33vh;
 }
 
 .proyectoText span {
@@ -283,7 +299,7 @@ body {
   margin: 0;
   height: 100vh;
   font-weight: 100;
-  background: radial-gradient(#a23982, #1f1013);
+  /*background: radial-gradient(#a23982, #1f1013); */
   overflow-y: hidden;
   -webkit-animation: fadeIn 1 1s ease-out;
   -moz-animation: fadeIn 1 1s ease-out;
@@ -553,9 +569,35 @@ button:focus {
   font-size: 2em;
 }
 
+.subTitulo {
+  font-size: 50px;
+}
+
+section {
+  height: 100vh;
+}
+
+#expEd {
+  font-family: 'Roboto', sans-serif;
+}
+
+#skills {
+  height: 100vh;
+  font-family: 'Roboto', sans-serif;
+}
+
+#proyects {
+  height: 100vh;
+  font-family: 'Roboto', sans-serif;
+}
+
+#contacto {
+  height: 100vh;
+  font-family: 'Roboto', sans-serif;
+}
+
 .nombre {
-  color:#cf83ff;
-  font-weight: bold;
+  color: #cf83ff;
 }
 
 .introTextBox {
