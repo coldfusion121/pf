@@ -1,510 +1,599 @@
-<div id="second"></div>
-<section id="aboutMe">
-  <div class="container">
-    <div class="p-4 rounded-3 border shadow-lg banner">
-      <div class="prueba">
-        <img
-          src="./assets/images/cv.jpeg"
-          alt="Foto chica"
-          class="fotoChica rounded-circle"
-        />
-      </div>
-    </div>
+<div id="longBody">
+  <div id="first"></div>
+  <div class="intro" #intro>
+    <div class="progress-bar" #progressbar></div>
+    <h1 class="count" #count></h1>
   </div>
-  <div class="container d-flex p-5 mt-3">
-    <h4 class="col-3 align-self-center">
-      Lucas Joel <br />
-      Mac Gregor
-    </h4>
-    <div class="col-9 centrado">
-      <h1>Fullstack Developer</h1>
-      <p class="aboutText">
-        Desarrollador muldisciplinario amante de la programación. Siempre
-        buscando la mejor forma de cumplir objetivos.
-      </p>
-    </div>
-  </div>
-</section>
-<div id="third"></div>
-<section id="expEd" class="d-flex">
-  <div class="container">
-    <div class="container p-3 expCont">
-      <h2 class="titulo">Experiencia Laboral</h2>
-      <div class="courses-container">
-        <div class="course">
-          <div class="course-preview d-flex">
-            <img
-              src="./assets/images/globant.png"
-              alt="Logo Empresa"
-              class="rounded img-fluid col-3 educLogo"
-            />
+  <section id="aboutMe">
+    <div class="spaceEven hide" #spaceEven>
+      <div class="introText">
+        <p id="head1">Piensa</p>
+        <p id="head2">Planea</p>
+        <p id="head3">Ejecuta</p>
+      </div>
+      <div class="aboutContainer d-flex justify-content-center" id="head4">
+        <div class="boxContainer d-flex">
+          <div class="outerCircle rounded-circle">
+            <div class="innerCircle rounded-circle">
+              <img
+                src="../../../assets/images/cv.jpeg"
+                alt="profile-pic"
+                class="rounded-circle"
+              />
+            </div>
           </div>
-          <div class="course-info">
-            <h6 class="subTitulo">Globant - Sistemas Globales</h6>
-            <p class="expText">
-              Fullstack Developer <br />
-              Desarrollo frontend con Angular - Bootstrap. <br />
-              Desarrollo backend con Node.js - MySQL. <br />
-              Unit testing con Karma - Jasmine para frontend y Mocha - Chai para
-              backend.
-            </p>
+          <div class="introName d-flex">
+            <span class="name">Lucas Joel Mac Gregor</span>
+            <span class="title">Software Developer</span>
           </div>
         </div>
-      </div>
-      <br />
-      <div class="courses-container">
-        <div class="course">
-          <div class="course-preview d-flex">
-            <img
-              src="./assets/images/sinapsis.jpg"
-              alt="Logo Empresa"
-              class="rounded img-fluid col-3 educLogo"
-            />
-          </div>
-          <div class="course-info">
-            <h6 class="subTitulo">Sinapsis Solutions</h6>
-            <p class="expText">
-              Soporte técnico - Desarrollo web <br />
-              Encargado del área de Reparación de PC, redes informáticas y
-              desarrollo web para emprendimientos y hoteles.
-            </p>
-          </div>
+        <div class="socials">
+          <a
+            class="btn btn-outline-light btn-floating m-1"
+            href="#!"
+            role="button"
+          >
+            <fa-icon [icon]="faGoogle"></fa-icon>
+          </a>
+          <a
+            class="btn btn-outline-light btn-floating m-1"
+            href="#!"
+            role="button"
+          >
+            <fa-icon [icon]="faInstagram"></fa-icon>
+          </a>
+          <a
+            class="btn btn-outline-light btn-floating m-1"
+            href="#!"
+            role="button"
+          >
+            <fa-icon [icon]="faLinkedin"></fa-icon>
+          </a>
+          <a
+            class="btn btn-outline-light btn-floating m-1"
+            href="#!"
+            role="button"
+          >
+            <fa-icon [icon]="faGithub"></fa-icon>
+          </a>
         </div>
       </div>
     </div>
-  </div>
-  <div class="container">
-    <div class="container p-3 edCont">
-      <h2 class="titulo">Educación</h2>
-      <div class="courses-container">
-        <div class="course">
-          <div class="course-preview d-flex">
-            <img
-              src="./assets/images/unmdp.png"
-              alt="Logo Empresa"
-              class="rounded img-fluid col-3 educLogo"
-            />
-          </div>
-          <div class="course-info">
-            <h6 class="subTitulo">Universidad Nacional de Mar del Plata</h6>
-            <p class="expText">
-              Ingeniería en informática. <br />
-              Estudiante de tercer año.
-            </p>
-          </div>
-        </div>
-      </div>
-      <br />
-      <div class="courses-container">
-        <div class="course">
-          <div class="course-preview d-flex">
-            <img
-              src="./assets/images/cac.png"
-              alt="Logo Empresa"
-              class="rounded img-fluid col-3 educLogo"
-            />
-          </div>
-          <div class="course-info">
-            <h6 class="subTitulo">Codo a Codo 4.0</h6>
-            <p class="expText">
-              Fullstack Developer. <br />
-              Unity Developer. <br />
-              Estudio completado.
-            </p>
-          </div>
-        </div>
+    <div class="container aboutMeText hideMe" id="head5" #aboutMeText>
+      <div class="TextContainer">
+        <p>
+          ¡Hola! Mi nombre es <b>Lucas</b>. Desarrollador de Software y
+          estudiante de Ingeniería Informática.
+        </p>
+        <p>
+          Soy padre de <b>dos hermosos gatitos</b>, quienes me acompañan día a
+          día a aprender cosas nuevas. Puedes conocerlos un poco más haciendo
+          click <a href="">aquí</a>.
+        </p>
+        <p>
+          Por otro lado soy fanático de "Netflix and Chill", me encanta
+          disfrutar de <b>series y películas</b> por las noches, también soy
+          amante de los juegos de rol y aventuras.
+        </p>
+        <p>
+          Con respecto a lo laboral cuento con gran iniciativa, capacidad de
+          trabajo y alto grado de
+          <b>compromiso</b>. Poseo gran <b>rapidez de aprendizaje</b>,
+          adaptación, buena predisposición e integración a equipos de trabajo.
+          <br />
+          <br />
+          ¡A continuación encontrarás información más específica sobre mi!
+        </p>
       </div>
     </div>
-  </div>
-</section>
-<div id="forth"></div>
-<section id="hardSkills">
-  <div class="hardSkillsContainer">
-    <h2 class="titulo mb-5">Hard Skills</h2>
-    <!--h4 class="subTituloHard">Frontend</h4-->
-    <div class="cards-list">
-      <span class="frontSkillTitle">Frontend</span>
-      <span class="openBracket">{{ "{" }}</span>
-      <div class="card card-1">
-        <div class="card_image">
-          <img src="./assets/images/html.svg" />
-        </div>
-        <div class="card_title title-white">
-          <p>HTML 5</p>
-        </div>
-      </div>
-      <div class="card card-2">
-        <div class="card_image">
-          <img src="./assets/images/css.svg" />
-        </div>
-        <div class="card_title title-white">
-          <p>CSS 3</p>
-        </div>
-      </div>
-      <div class="card card-3">
-        <div class="card_image">
-          <img src="./assets/images/js.svg" />
-        </div>
-        <div class="card_title title-white">
-          <p>JS/TS</p>
-        </div>
-      </div>
-      <div class="card card-4">
-        <div class="card_image">
-          <img src="./assets/images/angular.svg" />
-        </div>
-        <div class="card_title title-white">
-          <p>Angular</p>
-        </div>
-      </div>
-      <div class="card card-9">
-        <div class="card_image">
-          <img src="./assets/images/jasmine.svg" />
-        </div>
-        <div class="card_title title-white">
-          <p>Jasmine</p>
-        </div>
-      </div>
-      <div class="card card-10">
-        <div class="card_image">
-          <img src="./assets/images/karma.png" />
-        </div>
-        <div class="card_title title-white">
-          <p>Karma</p>
-        </div>
-      </div>
-      <span class="openBracket">{{ "}" }}</span>
-    </div>
-    <!--h4 class="subTituloHard">Backend</h4-->
+  </section>
 
-    <div class="cards-list">
-      <span class="frontSkillTitle">Backend</span>
-      <span class="openBracket">{{ "{" }}</span>
-      <div class="card card-5">
-        <div class="card_image">
-          <img src="./assets/images/python.svg" />
-        </div>
-        <div class="card_title title-white">
-          <p>Python</p>
-        </div>
-      </div>
-      <div class="card card-6">
-        <div class="card_image">
-          <img src="./assets/images/mysql.svg" />
-        </div>
-        <div class="card_title title-white">
-          <p>MySQL</p>
-        </div>
-      </div>
-      <div class="card card-7">
-        <div class="card_image">
-          <img src="./assets/images/docker.png" />
-        </div>
-        <div class="card_title title-white">
-          <p>Docker</p>
-        </div>
-      </div>
-      <div class="card card-8">
-        <div class="card_image">
-          <img src="./assets/images/node.png" />
-        </div>
-        <div class="card_title title-white">
-          <p>Node.js</p>
-        </div>
-      </div>
-      <div class="card card-11">
-        <div class="card_image">
-          <img src="./assets/images/mocha.svg" />
-        </div>
-        <div class="card_title title-white">
-          <p>Mocha</p>
-        </div>
-      </div>
-      <span class="openBracket">{{ "}" }}</span>
-    </div>
-  </div>
-</section>
-<section id="softSkills">
-  <h2 class="titulo">Soft Skills</h2>
-  <div class="contenedor-soft">
-    <div class="card-soft">
-      <div class="face face1">
-        <div class="content">
-          <img src="assets/icons/teamwork.svg" />
-          <h3>Trabajo en equipo</h3>
-        </div>
-      </div>
-      <div class="face face2">
-        <div class="content">
-          <p>
-            Ser parte de un equipo y progresar entre todos por un objetivo en
-            común.
-          </p>
-        </div>
-      </div>
-    </div>
-    <div class="card-soft">
-      <div class="face face1">
-        <div class="content">
-          <img src="assets/icons/comm.svg" />
-          <h3>Comunicación</h3>
-        </div>
-      </div>
-      <div class="face face2">
-        <div class="content">
-          <p>
-            Saber escuchar a otros y explicarse con facilidad para fomentar un
-            espacio ameno.
-          </p>
-        </div>
-      </div>
-    </div>
-    <div class="card-soft">
-      <div class="face face1">
-        <div class="content">
-          <img src="assets/icons/init.svg" />
-          <h3>Iniciativa</h3>
-        </div>
-      </div>
-      <div class="face face2">
-        <div class="content">
-          <p>
-            Sumar novedosas ideas al equipo pensando en el futuro, siempre en
-            movimiento.
-          </p>
-        </div>
-      </div>
-    </div>
-    <div class="card-soft">
-      <div class="face face1">
-        <div class="content">
-          <img src="assets/icons/flex.svg" />
-          <h3>Flexibilidad</h3>
-        </div>
-      </div>
-      <div class="face face2">
-        <div class="content">
-          <p>Aceptar el cambio. Avanzar sin miedo a lo nuevo.</p>
-        </div>
-      </div>
-    </div>
-    <div class="card-soft">
-      <div class="face face1">
-        <div class="content">
-          <img src="assets/icons/orga.svg" />
-          <h3>Organización</h3>
-        </div>
-      </div>
-      <div class="face face2">
-        <div class="content">
-          <p>Establecer tiempos claros y cumplirlos según lo establecido.</p>
-        </div>
-      </div>
-    </div>
-    <div class="card-soft">
-      <div class="face face1">
-        <div class="content">
-          <img src="assets/icons/creat.png" />
-          <h3>Creatividad</h3>
-        </div>
-      </div>
-      <div class="face face2">
-        <div class="content">
-          <p>Buscar soluciones únicas a problemas difíciles.</p>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-<div id="fiveth"></div>
-<section id="proyects">
-  <div class="container p-3">
-    <h3 class="titulo">Proyectos</h3>
-    <div class="accordion" id="accordionExample">
-      <div class="accordion-item">
-        <h2 class="accordion-header" id="headingOne">
-          <button
-            class="accordion-button"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#collapseOne"
-            aria-expanded="true"
-            aria-controls="collapseOne"
-          >
-            Globant Training Proyect
-          </button>
-        </h2>
-        <div
-          id="collapseOne"
-          class="accordion-collapse collapse show"
-          aria-labelledby="headingOne"
-          data-bs-parent="#accordionExample"
-        >
-          <div class="accordion-body">
-            <div class="container d-flex p-2">
-              <img
-                src="./assets/images/portf.jpg"
-                alt="Screenshot del proyecto"
-                class="col-3 rounded proyLogo"
-              />
-              <p class="proyectoText col-9 p-4">
-                Proyecto de training para pasantía en Globant. <br />
-                El mismo consta de uso de distintas funcionalidades de Angular
-                como Bindings, Inputs/Outputs, Services, Guards, Routing,
-                Interceptors y más.
-                <br />
-                También se utilizó Node.js junto al framework Express.js y una
-                base de datos en MySQL. * <br />
-                Tanto frontend como backend cuentan con unit tests con un
-                coverage superior al 90% y 80% respecivamente. <br />
-                Posteriormente se dockerizó la aplicación con fines de
-                aprendizaje.
-                <br />
-                <br />
-                <span>
-                  Actualmente el deploy solo consta de un frontend con un mock
-                  del backend. La funcionalidades de carga/descarga de archivos
-                  excel estan deshabilitadas.
-                </span>
-              </p>
-            </div>
-            <div class="d-inline-flex row-12 tagBtn-container">
-              <div class="col tagContainer">
-                <span class="badge bg-primary">HTML</span>
-                <span class="badge bg-success">CSS3</span>
-                <span class="badge bg-warning">TypeScript</span>
-                <span class="badge bg-danger">Angular</span>
-                <span class="badge bg-info">Bootstrap</span>
-                <span class="badge bg-primary">Docker</span>
-                <span class="badge bg-success">Node.js</span>
-                <span class="badge bg-primary">MySQL</span>
-                <span class="badge bg-success">Unit Tested</span>
+  <div class="hideMe" id="head5" #expEd>
+    <div id="second"></div>
+    <section id="expEd" class="d-flex">
+      <div class="container">
+        <div class="expCont">
+          <h2 class="titulo">Experiencia Laboral</h2>
+          <div class="courses-container">
+            <div class="course">
+              <div class="course-preview">
+                <img
+                  src="./assets/images/globant.png"
+                  alt="Logo Empresa"
+                  class="rounded img-fluid col-3 educLogo"
+                />
               </div>
-              <div class="col visitBtn">
-                <a
-                  href="https://lucasjoel.netlify.app"
-                  target="_blank"
-                  class="btn btn-primary"
-                  >Visitar</a
-                >
+              <div class="course-info">
+                <div class="course-title">
+                  <h6 class="subTitulo">Globant - Sistemas Globales</h6>
+                </div>
+                <p class="expText">
+                  Fullstack Developer <br />
+                  Desarrollo frontend con Angular - Bootstrap. <br />
+                  Desarrollo backend con Node.js - MySQL. <br />
+                  Unit testing con Karma - Jasmine para frontend y Mocha - Chai
+                  para backend.
+                </p>
+              </div>
+            </div>
+          </div>
+          <br />
+          <div class="courses-container">
+            <div class="course">
+              <div class="course-preview">
+                <img
+                  src="./assets/images/sinapsis.jpg"
+                  alt="Logo Empresa"
+                  class="rounded img-fluid col-3 educLogo"
+                />
+              </div>
+              <div class="course-info">
+                <div class="course-title">
+                  <h6 class="subTitulo">Sinapsis Solutions</h6>
+                </div>
+                <p class="expText">
+                  Soporte técnico - Desarrollo web <br />
+                  Encargado del área de Reparación de PC, redes informáticas y
+                  desarrollo web para emprendimientos y hoteles.
+                </p>
               </div>
             </div>
           </div>
         </div>
       </div>
-      <div class="accordion-item">
-        <h2 class="accordion-header" id="headingTwo">
-          <button
-            class="accordion-button collapsed"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#collapseTwo"
-            aria-expanded="false"
-            aria-controls="collapseTwo"
-          >
-            Tu Tienda
-          </button>
-        </h2>
-        <div
-          id="collapseTwo"
-          class="accordion-collapse collapse"
-          aria-labelledby="headingTwo"
-          data-bs-parent="#accordionExample"
-        >
-          <div class="accordion-body">
-            <div class="container d-flex p-2">
-              <img
-                src="./assets/images/tiendita.jpg"
-                alt="Screenshot del proyecto"
-                class="col-3 rounded proyLogo"
-              />
-              <p class="proyectoText col-9 p-4">
-                Página demo de una tienda de ropa para adultos y niños. <br />
-                Cuenta con un carrito de compras funcional y diversas secciones
-                para explorar. <br />
-                <br />
-                Entre las mismas podemos encontrar con la sección de compras,
-                sobre nosotros y contacto, donde veremos un mapa interactivo,
-                información de la tienda y un cuadro para dejar un mensaje.
-              </p>
+
+      <div class="container">
+        <div class="edCont">
+          <h2 class="titulo">Educación</h2>
+          <div class="courses-container">
+            <div class="course">
+              <div class="course-preview">
+                <img
+                  src="./assets/images/unmdp.png"
+                  alt="Logo Empresa"
+                  class="rounded img-fluid col-3 educLogo"
+                />
+              </div>
+              <div class="course-info">
+                <div class="course-title">
+                  <h6 class="subTitulo">
+                    Universidad Nacional de Mar del Plata
+                  </h6>
+                </div>
+                <p class="expText">
+                  Ingeniería en informática. <br />
+                  Estudiante de tercer año.
+                </p>
+              </div>
             </div>
-            <div class="d-inline-flex row-12 tagBtn-container">
-              <div class="col tagContainer">
-                <div class="align-self-end col-12">
-                  <span class="badge bg-primary">HTML</span>
-                  <span class="badge bg-success">CSS3</span>
-                  <span class="badge bg-warning">TypeScript</span>
-                  <span class="badge bg-danger">Angular</span>
-                  <span class="badge bg-info">Bootstrap</span>
+          </div>
+          <br />
+          <div class="courses-container">
+            <div class="course">
+              <div class="course-preview">
+                <img
+                  src="./assets/images/cac.png"
+                  alt="Logo Empresa"
+                  class="rounded img-fluid col-3 educLogo"
+                />
+              </div>
+              <div class="course-info">
+                <div class="course-title">
+                  <h6 class="subTitulo">Codo a Codo 4.0</h6>
+                </div>
+                <p class="expText">
+                  Fullstack Developer. <br />
+                  Unity Developer. <br />
+                  Estudio completado.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div id="third"></div>
+    <section id="hardSkills">
+      <div class="hardSkillsContainer">
+        <h2 class="titulo mb-5">Hard Skills</h2>
+        <div class="skillsContainer d-flex">
+          <span class="frontSkillTitle">Frontend</span>
+          <div class="lineBoxF"></div>
+          <div class="cards-list">
+            <div class="card card-1">
+              <div class="card_image">
+                <img src="./assets/images/html.svg" />
+              </div>
+              <div class="card_title title-white">
+                <p>HTML 5</p>
+              </div>
+            </div>
+            <div class="card card-2">
+              <div class="card_image">
+                <img src="./assets/images/css.svg" />
+              </div>
+              <div class="card_title title-white">
+                <p>CSS 3</p>
+              </div>
+            </div>
+            <div class="card card-3">
+              <div class="card_image">
+                <img src="./assets/images/js.svg" />
+              </div>
+              <div class="card_title title-white">
+                <p>JS/TS</p>
+              </div>
+            </div>
+            <div class="card card-4">
+              <div class="card_image">
+                <img src="./assets/images/angular.svg" />
+              </div>
+              <div class="card_title title-white">
+                <p>Angular</p>
+              </div>
+            </div>
+            <div class="card card-9">
+              <div class="card_image">
+                <img src="./assets/images/jasmine.svg" />
+              </div>
+              <div class="card_title title-white">
+                <p>Jasmine</p>
+              </div>
+            </div>
+            <div class="card card-10">
+              <div class="card_image">
+                <img src="./assets/images/karma.png" />
+              </div>
+              <div class="card_title title-white">
+                <p>Karma</p>
+              </div>
+            </div>
+          </div>
+          <div class="lineBoxF"></div>
+        </div>
+        <div class="skillsContainer d-flex">
+          <span class="frontSkillTitle">Backend</span>
+          <div class="lineBoxB"></div>
+          <div class="cards-list">
+            <div class="card card-5">
+              <div class="card_image">
+                <img src="./assets/images/python.svg" />
+              </div>
+              <div class="card_title title-white">
+                <p>Python</p>
+              </div>
+            </div>
+            <div class="card card-6">
+              <div class="card_image">
+                <img src="./assets/images/mysql.svg" />
+              </div>
+              <div class="card_title title-white">
+                <p>MySQL</p>
+              </div>
+            </div>
+            <div class="card card-7">
+              <div class="card_image">
+                <img src="./assets/images/docker.png" />
+              </div>
+              <div class="card_title title-white">
+                <p>Docker</p>
+              </div>
+            </div>
+            <div class="card card-8">
+              <div class="card_image">
+                <img src="./assets/images/node.png" />
+              </div>
+              <div class="card_title title-white">
+                <p>Node.js</p>
+              </div>
+            </div>
+            <div class="card card-11">
+              <div class="card_image">
+                <img src="./assets/images/mocha.svg" />
+              </div>
+              <div class="card_title title-white">
+                <p>Mocha</p>
+              </div>
+            </div>
+          </div>
+          <div class="lineBoxB"></div>
+        </div>
+      </div>
+    </section>
+    <div id="forth"></div>
+    <section id="softSkills">
+      <h2 class="titulo">Soft Skills</h2>
+      <div class="contenedorSoft">
+        <div class="card-soft">
+          <div class="caraFrontal">
+            <div class="imgSoft">
+              <img src="assets/icons/teamwork.svg" alt="teamwork img" />
+            </div>
+            <div class="cardTitulo">
+              <h3>Trabajo en Equipo</h3>
+            </div>
+          </div>
+          <div class="caraAtras">
+            <p>
+              Ser parte de un equipo y progresar entre todos por un objetivo en
+              común.
+            </p>
+          </div>
+        </div>
+        <div class="card-soft">
+          <div class="caraFrontal">
+            <div class="imgSoft">
+              <img src="assets/icons/comm.svg" alt="communication img" />
+            </div>
+            <div class="cardTitulo">
+              <h3>Comunicación</h3>
+            </div>
+          </div>
+          <div class="caraAtras">
+            <p>
+              Saber escuchar a otros y explicarse para fomentar un espacio
+              ameno.
+            </p>
+          </div>
+        </div>
+        <div class="card-soft">
+          <div class="caraFrontal">
+            <div class="imgSoft">
+              <img src="assets/icons/init.svg" alt="iniciativa img" />
+            </div>
+            <div class="cardTitulo">
+              <h3>Iniciativa</h3>
+            </div>
+          </div>
+          <div class="caraAtras">
+            <p>
+              Sumar ideas al equipo, pensando en el futuro, siempre en
+              movimiento.
+            </p>
+          </div>
+        </div>
+        <div class="card-soft">
+          <div class="caraFrontal">
+            <div class="imgSoft">
+              <img src="assets/icons/flex.svg" alt="flexibilidad img" />
+            </div>
+            <div class="cardTitulo">
+              <h3>Flexibilidad</h3>
+            </div>
+          </div>
+          <div class="caraAtras">
+            <p>
+              Aceptar los cambios, avanzar sin miedo a las nuevas tecnologías.
+            </p>
+          </div>
+        </div>
+        <div class="card-soft">
+          <div class="caraFrontal">
+            <div class="imgSoft">
+              <img src="assets/icons/orga.svg" alt="organizacion img" />
+            </div>
+            <div class="cardTitulo">
+              <h3>Organización</h3>
+            </div>
+          </div>
+          <div class="caraAtras">
+            <p>Establecer tiempos claros y cumplirlos según lo establecido.</p>
+          </div>
+        </div>
+        <div class="card-soft">
+          <div class="caraFrontal">
+            <div class="imgSoft">
+              <img src="assets/icons/creat.png" alt="creatividad img" />
+            </div>
+            <div class="cardTitulo">
+              <h3>Creatividad</h3>
+            </div>
+          </div>
+          <div class="caraAtras">
+            <p>Buscar soluciones consistentes a problemas difíciles.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div id="fifth"></div>
+    <section id="proyects">
+      <div class="container p-3">
+        <h3 class="titulo">Proyectos</h3>
+        <div class="accordion" id="accordionExample">
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingOne">
+              <button
+                class="accordion-button"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseOne"
+                aria-expanded="true"
+                aria-controls="collapseOne"
+              >
+                Globant Training Proyect
+              </button>
+            </h2>
+            <div
+              id="collapseOne"
+              class="accordion-collapse collapse show"
+              aria-labelledby="headingOne"
+              data-bs-parent="#accordionExample"
+            >
+              <div class="accordion-body">
+                <div class="container d-flex p-2">
+                  <img
+                    src="./assets/images/batman.jpg"
+                    alt="Screenshot del proyecto"
+                    class="col-3 rounded proyLogo"
+                  />
+                  <p class="proyectoText">
+                    Proyecto de training para Globant. <br />
+                    El mismo consta de uso de distintas funcionalidades de
+                    Angular como Bindings, Inputs/Outputs, Services, Guards,
+                    Routing, Interceptors y más.
+                    <br />
+                    También se utilizó Node.js junto al framework Express.js y
+                    una base de datos en MySQL.* <br />
+                    Tanto frontend como backend cuentan con unit tests con un
+                    coverage superior al 90% y 80% respecivamente. <br />
+                    Posteriormente se dockerizó la aplicación con fines de
+                    aprendizaje.
+                    <br />
+                    <br />
+                    <span>
+                      * Actualmente el deploy consta de un frontend con un mock
+                      del backend. Las funcionalidades de carga/descarga de
+                      archivos excel estan deshabilitadas. <br />
+                      Para acceder al sitio puede usar cualquier combinación de
+                      user/pass.
+                    </span>
+                  </p>
+                </div>
+                <div class="d-inline-flex row-12 tagBtn-container">
+                  <div class="col-9 tagContainer">
+                    <span class="badge bg-primary">HTML</span>
+                    <span class="badge bg-success">CSS3</span>
+                    <span class="badge bg-warning">TypeScript</span>
+                    <span class="badge bg-danger">Angular</span>
+                    <span class="badge bg-info">Bootstrap</span>
+                    <span class="badge bg-primary">Docker</span>
+                    <span class="badge bg-success">Node.js</span>
+                    <span class="badge bg-primary">MySQL</span>
+                    <span class="badge bg-success">Unit Tested</span>
+                  </div>
+                  <div class="col visitBtn">
+                    <a
+                      href="https://batman-gb.netlify.app/"
+                      target="_blank"
+                      class="btn btn-primary"
+                      >Visitar</a
+                    >
+                  </div>
                 </div>
               </div>
-              <a
-                href="https://tu-tienda.netlify.app"
-                target="_blank"
-                class="btn btn-primary mt-2"
-                >Visitar</a
-              >
             </div>
           </div>
-        </div>
-      </div>
-      <div class="accordion-item">
-        <h2 class="accordion-header" id="headingThree">
-          <button
-            class="accordion-button collapsed"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#collapseThree"
-            aria-expanded="false"
-            aria-controls="collapseThree"
-          >
-            Primer portfolio
-          </button>
-        </h2>
-        <div
-          id="collapseThree"
-          class="accordion-collapse collapse"
-          aria-labelledby="headingThree"
-          data-bs-parent="#accordionExample"
-        >
-          <div class="accordion-body">
-            <div class="container d-flex p-2">
-              <img
-                src="./assets/images/portf.jpg"
-                alt="Screenshot del proyecto"
-                class="col-3 rounded proyLogo"
-              />
-              <p class="proyectoText col-9 p-4">
-                Primer portfolio realizado. <br />
-                El mismo fué entregado como proyecto final para la aprobación
-                del curso Fullstack Developer ofrecido por el programa Codo a
-                Codo 4.0
-                <br />
-                Está compuesto principalmente por HTML, CSS3, JavaScript y con
-                ayuda de Bootstrap para lograr un diseño responsive.
-              </p>
-            </div>
-            <div class="d-inline-flex row-12 tagBtn-container">
-              <div class="col tagContainer">
-                <div class="align-self-end col-12">
-                  <span class="badge bg-primary">HTML</span>
-                  <span class="badge bg-success">CSS3</span>
-                  <span class="badge bg-warning">JavaScript</span>
-                  <span class="badge bg-info">Bootstrap</span>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingTwo">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseTwo"
+                aria-expanded="false"
+                aria-controls="collapseTwo"
+              >
+                Tu Tienda
+              </button>
+            </h2>
+            <div
+              id="collapseTwo"
+              class="accordion-collapse collapse"
+              aria-labelledby="headingTwo"
+              data-bs-parent="#accordionExample"
+            >
+              <div class="accordion-body">
+                <div class="container d-flex p-2">
+                  <img
+                    src="./assets/images/tiendita.jpg"
+                    alt="Screenshot del proyecto"
+                    class="col-3 rounded proyLogo"
+                  />
+                  <p class="proyectoText">
+                    Página demo de una tienda de ropa para adultos y niños.
+                    <br />
+                    Cuenta con un carrito de compras funcional y diversas
+                    secciones para explorar. <br />
+                    <br />
+                    Entre las mismas podemos encontrar con la sección de
+                    compras, sobre nosotros y contacto, donde veremos un mapa
+                    interactivo, información de la tienda y un cuadro para dejar
+                    un mensaje.
+                  </p>
+                </div>
+                <div class="d-inline-flex row-12 tagBtn-container">
+                  <div class="col-9 tagContainer">
+                    <div class="align-self-end col-12">
+                      <span class="badge bg-primary">HTML</span>
+                      <span class="badge bg-success">CSS3</span>
+                      <span class="badge bg-warning">TypeScript</span>
+                      <span class="badge bg-danger">Angular</span>
+                      <span class="badge bg-info">Bootstrap</span>
+                    </div>
+                  </div>
+                  <div class="col visitBtn">
+                    <a
+                      href="https://tu-tienda.netlify.app"
+                      target="_blank"
+                      class="btn btn-primary"
+                      >Visitar</a
+                    >
+                  </div>
                 </div>
               </div>
-              <a
-                href="https://lucasjoel.netlify.app"
-                target="_blank"
-                class="btn btn-primary mt-2"
-                >Visitar</a
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingThree">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseThree"
+                aria-expanded="false"
+                aria-controls="collapseThree"
               >
+                Primer portfolio
+              </button>
+            </h2>
+            <div
+              id="collapseThree"
+              class="accordion-collapse collapse"
+              aria-labelledby="headingThree"
+              data-bs-parent="#accordionExample"
+            >
+              <div class="accordion-body">
+                <div class="container d-flex p-2">
+                  <img
+                    src="./assets/images/portf.jpg"
+                    alt="Screenshot del proyecto"
+                    class="col-3 rounded proyLogo"
+                  />
+                  <p class="proyectoText">
+                    Primer portfolio realizado. <br />
+                    El mismo fué entregado como proyecto final para la
+                    aprobación del curso Fullstack Developer ofrecido por el
+                    programa Codo a Codo 4.0
+                    <br />
+                    Está compuesto principalmente por HTML, CSS3, JavaScript y
+                    con ayuda de Bootstrap para lograr un diseño responsive.
+                  </p>
+                </div>
+                <div class="d-inline-flex row-12 tagBtn-container">
+                  <div class="col-9 tagContainer">
+                    <div class="align-self-end col-12">
+                      <span class="badge bg-primary">HTML</span>
+                      <span class="badge bg-success">CSS3</span>
+                      <span class="badge bg-warning">JavaScript</span>
+                      <span class="badge bg-info">Bootstrap</span>
+                    </div>
+                  </div>
+                  <div class="col visitBtn">
+                    <a
+                      href="https://lucasjoel-old.netlify.app"
+                      target="_blank"
+                      class="btn btn-primary"
+                      >Visitar</a
+                    >
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
+    </section>
+    <div id="sixth"></div>
+    <section id="contacto"></section>
   </div>
-</section>
-<div id="sixth"></div>
-<section id="contacto"></section>
+</div>

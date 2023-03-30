@@ -1,28 +1,58 @@
-import { Component, OnInit } from '@angular/core';
-
+import { AfterViewInit, Component, ViewChildren, QueryList } from '@angular/core';
+import { faListAlt } from '@fortawesome/free-regular-svg-icons';
+import { faInstagram, faFacebook, faTwitter, faGithub, faLinkedin, faGoogle} from '@fortawesome/free-brands-svg-icons'
 @Component({
   selector: 'app-portfolio',
   templateUrl: './portfolio.component.html',
   styleUrls: ['./portfolio.component.css']
 })
-export class PortfolioComponent implements OnInit {
+export class PortfolioComponent implements AfterViewInit {
 
-  accStatus: Array<boolean> = [false, true, true];
-
+  faListAlt = faListAlt;
+  faInstagram= faInstagram;
+  faFacebook = faFacebook ;
+  faGithub   = faGithub   ;
+  faLinkedin = faLinkedin ;
+  faGoogle = faGoogle;
+  
+  @ViewChildren("progressbar, count, intro, expEd, spaceEven, aboutMeText") private childrens!: QueryList<any>;
+  
   constructor() { }
 
-  ngOnInit(): void {
-  }
+  ngAfterViewInit(): void {
 
-  public accordion(index: number): void {
-    for (let i = 0; i < this.accStatus.length; i++) {
-      if (index !== i) {
-        this.accStatus[i] = true;
+    let i = 0;
+    let throttle = 1; // 0-1
+    let htmlElements = this.childrens.map(element => element);
+    console.log(htmlElements);
+    let intro = htmlElements[0];
+    let progressbar = htmlElements[1];
+    let count = htmlElements[2];
+    let expEd = htmlElements[3];
+    let aboutMeText = htmlElements[4];
+    let spaceEven = htmlElements[5];
+
+    console.log(aboutMeText);
+    (function draw(this: any) {
+      if (i <= 100) {
+        let r = Math.random();
+        requestAnimationFrame(draw);
+        progressbar.nativeElement.style.width = i + '%';
+        count.nativeElement.innerHTML = Math.round(i) + '%';
+        if (r < throttle) { // Simulate d/l speed and uneven bitrate
+          i = i + r;
+        }
+      } else {
+        progressbar.nativeElement.className += " done";
+        count.nativeElement.className = "hide";
+        spaceEven.nativeElement.className = "show";
+        aboutMeText.nativeElement.className = "aboutMeText container";
+        setTimeout(() => {
+          progressbar.nativeElement.className = "hide";
+          intro.nativeElement.className = "show";
+          expEd.nativeElement.className = "spaceEven d-flex";
+        }, 400);
       }
-      else {
-        this.accStatus[i] = !this.accStatus[i];
-      }
-    }
-    console.log(this.accStatus);
+    })();
   }
 }

@@ -2,14 +2,153 @@
     font-family: Roboto;
 }
 
+#longBody {
+    background-color: #232323;
+}
+
 html {
     width: 100%;
 }
 
 section {
-    height: 100vh;
+    width: 100%;
+    height: 100%;
     background-color: #232323;
     color: whitesmoke;
+}
+
+/* new try intro*/
+.hide {
+    display: none;
+}
+
+.intro {
+    height: 100vh;
+    width: auto;
+    background-color: black;
+}
+
+.progress-bar {
+    position: absolute;
+    top: 50%;
+    height: 2px;
+    background: #232323;
+    width: 0px;
+}
+
+.done {
+    top: 0;
+    height: 100%;
+    width: 100%;
+    transition: all .33s ease;
+}
+
+.count {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    text-align: center;
+    font-weight: 100;
+    font-size: 3em;
+    margin-top: -1.33em;
+    color: #af71af;
+}
+
+.hideMe {
+    display: none;
+}
+/* new try intro end */
+
+#aboutMe {
+    background: #232323;
+}
+
+.introText {
+    height: 600px;
+    text-align: center;
+    flex-direction: column;
+    font-size: 70px;
+    display: flex;
+    justify-content: center;
+}
+
+.introText p {
+    opacity: 1;
+}
+
+.spaceEven {
+    justify-content: space-evenly;
+}
+
+.aboutContainer {
+    height: 600px;
+    flex-direction: column;
+    padding-top: 100px;
+}
+
+.boxContainer {
+    height: 300px;
+    width: 300px;
+    background: #1a1a1a;
+    align-self: center;
+    justify-content: center;
+    box-shadow: 5px 5px 30px 15px rgb(0 0 0 / 53%);
+    flex-direction: column;
+}
+
+.outerCircle {
+    height: 250px;
+    width: 220px;
+    background-color: #603b5852;
+    position: relative;
+    top: -125px;
+    display: flex;
+    justify-content: center;
+    align-self: center;
+}
+
+.innerCircle {
+    height: 200px;
+    width: 170px;
+    display: flex;
+    align-self: center;
+}
+
+.introName {
+    flex-direction: column;
+    text-align: center;
+    position: relative;
+    top: -100px;
+}
+
+.name {
+    font-size: 26px;
+}
+
+.socials {
+    height: 44px;
+    width: 300px;
+    display: flex;
+    align-self: center;
+    justify-content: center;
+    position: relative;
+    top: -70px;
+}
+
+.aboutMeText {
+    margin: auto;
+    background-color: #1a1a1a;
+    box-shadow: 5px 5px 30px 15px rgb(0 0 0 / 53%);
+    margin-bottom: 80px;
+}
+
+.aboutMeText p {
+    margin: auto;
+}
+
+.TextContainer {
+    padding: 25px 25px 25px 25px;
+
 }
 
 .cabecera {
@@ -17,8 +156,9 @@ section {
 }
 
 .subTitulo {
-    font-size: 1.6em;
+    font-size: 1.5em;
     color: black;
+    text-align: center;
 }
 
 .centrado {
@@ -54,26 +194,30 @@ section {
     inline-size: fit-content;
 }
 
-
+#expEd {
+    margin-bottom: 60px;
+}
 
 .expText {
-    font-size: normal;
     display: flex;
-    align-items: center;
-    height: 70%;
     color: black;
+    height: 50%;
+    margin-left: 30px;
+    margin-right: 30px;
+    align-items: center;
 }
 
 
 .proyLogo {
-    max-width: 270px;
-    max-height: 270px;
+    width: 250px;
+    height: 200px;
+    align-self: center;
 }
 
 .titulo {
     text-align: center;
     font-size: 3rem;
-    margin-bottom: 3vh;
+    margin-bottom: 60px;
 }
 
 .boxHolder {
@@ -82,17 +226,22 @@ section {
     box-shadow: 4px 3px 10px 2px cornflowerblue;
 }
 
+.proyectoText {
+    padding-left: 20px;
+    align-self: center;
+}
+
 .proyectoText span {
     font-size: small;
     font-weight: bold;
+    margin: auto;
 }
 
-.container {
-    justify-content: flex-end;
-}
+
 .badge {
     margin-right: 7px;
 }
+
 
 /* cards */
 
@@ -103,7 +252,6 @@ section {
 .frontSkillTitle {
     writing-mode: vertical-rl;
     text-orientation: upright;
-    margin-top: 40px;
     font-size: 20px;
     font-weight: bold;
 }
@@ -118,16 +266,18 @@ section {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
-    margin-bottom: 50px;
 }
 
 .card {
-    margin-top: 30px;
+    box-shadow: 5px 5px 30px 15px rgba(0, 0, 0, 0.15), -5px -5px 30px 15px rgba(0, 0, 0, 0.15);
     width: 200px;
     height: 200px;
     border-radius: 40px;
     cursor: pointer;
     transition: 0.4s;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    transform: scale(0.9, 0.9);
 }
 
 .card .card_image {
@@ -159,8 +309,7 @@ section {
 }
 
 .card:hover {
-    transform: scale(0.9, 0.9);
-    box-shadow: 5px 5px 30px 15px rgba(0, 0, 0, 0.15), -5px -5px 30px 15px rgba(0, 0, 0, 0.15);
+    transform: scale(1, 1);
 }
 
 .title-white {
@@ -174,171 +323,196 @@ section {
 
 .card-1 {
     background-color: coral;
-    box-shadow: 5px 5px 30px 7px rgba(227, 79, 38, 0.349), -5px -5px 30px 7px #ff7f5056;
 }
 
 .card-2 {
     background-color: cornflowerblue;
-    box-shadow: 5px 5px 30px 7px #1b72ba57, -5px -5px 30px 7px #1c88c754;
 }
 
 .card-3 {
     background-color: #ffe760;
-    box-shadow: 5px 5px 30px 7px #e9cb3257, -5px -5px 30px 7px #ffde2554;
 }
 
 .card-4 {
     background-color: rgb(165, 0, 0);
-    box-shadow: 5px 5px 30px 7px #dd003050, -5px -5px 30px 7px #c3002e56;
 }
 
 .card-5 {
     background: #00059bde;
-    box-shadow: 5px 5px 30px 7px #3776a954, -5px -5px 30px 7px #3776a954;
 }
 
 .card-6 {
     background: #03094c;
-    box-shadow: 5px 5px 30px 7px #03094c57, -5px -5px 30px 7px #28aace59;
 }
 
 .card-7 {
-    background: #6adeff;
-    box-shadow: 5px 5px 30px 7px #5fd2f3, -5px -5px 30px 7px #5fd2f3;
+    background: #5fd2f3;
 }
 
 .card-8 {
     background: #376400;
-    box-shadow: 5px 5px 30px 7px #0062276b, -5px -5px 30px 7px #0062276b;
 }
 
 .card-9 {
     background: #ff8cf2;
-    box-shadow: 5px 5px 30px 7px #b200df5e, -5px -5px 30px 7px #b200df5e;
 }
 
 .card-10 {
     background: #00ffbc;
-    box-shadow: 5px 5px 30px 7px #00df595e, -5px -5px 30px 7px #00df595e;
 }
 
 .card-11 {
-    background: #ff7d14;
+    background: #c77028;
+}
+
+.card-1:hover{
+    box-shadow: 5px 5px 30px 7px rgba(227, 79, 38, 0.349), -5px -5px 30px 7px #ff7f5056;
+}
+
+.card-2:hover{
+    box-shadow: 5px 5px 30px 7px #1b72ba57, -5px -5px 30px 7px #1c88c754;
+}
+
+.card-3:hover{
+    box-shadow: 5px 5px 30px 7px #e9cb3257, -5px -5px 30px 7px #ffde2554;
+}
+
+.card-4:hover{
+    box-shadow: 5px 5px 30px 7px #dd003050, -5px -5px 30px 7px #c3002e56;
+}
+
+.card-5:hover{
+    box-shadow: 5px 5px 30px 7px #3776a954, -5px -5px 30px 7px #3776a954;
+}
+
+.card-6:hover{
+    box-shadow: 5px 5px 30px 7px #03094c57, -5px -5px 30px 7px #28aace59;
+}
+
+.card-7:hover{
+    box-shadow: 5px 5px 30px 7px #57bcd8, -5px -5px 30px 7px #5fd2f3;
+}
+
+.card-8:hover{
+    box-shadow: 5px 5px 30px 7px #0062276b, -5px -5px 30px 7px #0062276b;
+}
+
+.card-9:hover{
+    box-shadow: 5px 5px 30px 7px #b200df5e, -5px -5px 30px 7px #b200df5e;
+}
+
+.card-10:hover {
+    box-shadow: 5px 5px 30px 7px #00df595e, -5px -5px 30px 7px #00df595e;
+}
+
+.card-11:hover {
     box-shadow: 5px 5px 30px 7px #9b7a5f, -5px -5px 30px 7px #9b7a5f;
 }
 
 
 
-@media all and (max-width: 500px) {
-    .card-list {
-        flex-direction: column;
-    }
-}
-
-/*fin cards/*
-
- /*soft skills*/
-
- .content {
-    color: black;
- }
-.contenedor-soft {
-    width: 40%;
-    margin: auto;
-    position: relative;
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-}
-
-.contenedor-soft .card-soft {
-    position: relative;
-    cursor: pointer;
-}
-
-.contenedor-soft .card-soft .face {
-    width: 200px;
-    height: 200px;
-    transition: 0.5s;
-}
-
-.contenedor-soft .card-soft .face.face1 {
-    position: relative;
-    background: #333;
-    display: flex;
+.skillsContainer  {
     justify-content: center;
     align-items: center;
-    z-index: 1;
-    transform: translateY(100px);
+    width: 80%;
+    margin: auto;
+    margin-bottom: 60px;
 }
 
-.contenedor-soft .card-soft:hover .face.face1 {
-    background: #ff0057;
-    transform: translateY(20px);
+.lineBoxF {
+    height: 107px;
+    width: 2px;
+    border: solid;
+    color: yellow;
 }
 
-.contenedor-soft .card-soft .face.face1 .content {
-    opacity: 0.2;
+.lineBoxB {
+    height: 107px;
+    width: 2px;
+    border: solid;
+    color: yellow;
+}
+
+/*fin cards*/
+ /*soft skills*/
+
+.card-soft {
+    height: 270px;
+    width: 200px;
     transition: 0.5s;
+    box-sizing: border-box;
 }
 
-.contenedor-soft .card-soft:hover .face.face1 .content {
-    opacity: 1;
+.caraFrontal {
+    background: #333;
+    height: 200px;
+    width: 200px;
+    z-index: 2;
+    position: absolute;
 }
 
-.contenedor-soft .card-soft .face.face1 .content img {
+.card-soft:hover .caraFrontal {
+    transition: 0.5s;
+    transform: translateY(-50px);
+    background: #ff0057;
+}
+
+.caraAtras p {
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.caraAtras {
+    height: 200px;
+    width: 200px;
+    z-index: 1;
+    position: absolute;
+    display: flex;
+    align-items: flex-end;
+    text-align: center;
+    background: #fff;
+    color: black;
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.8);
+}
+
+.card-soft:hover .caraAtras {
+    transition: 0.5s;
+    transform: translateY(+50px);
+}
+
+.imgSoft img {
     max-width: 100px;
     display: block;
     margin-left: auto;
     margin-right: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    opacity: 0.5;
 }
 
-.contenedor-soft .card-soft .face.face1 .content h3 {
-    margin: 10px 0 0;
-    padding: 0;
-    color: #fff;
+.card-soft:hover .imgSoft img {
+    opacity: 1;
+}
+
+.card-soft:hover .cardTitulo {
+    opacity: 1;
+}
+
+.cardTitulo {
     text-align: center;
-    font-size: 1.5em;
+    opacity: 0.7;
 }
 
-.contenedor-soft .card-soft .face.face2 {
-    position: relative;
-    background: #fff;
+.contenedorSoft {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 20px;
-    padding-top: 40px;
-    box-sizing: border-box;
-    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.8);
-    transform: translateY(-100px);
-}
-
-.contenedor-soft .card-soft:hover .face.face2 {
-    transform: translateY(-20px);
-}
-
-.contenedor-soft .card-soft .face.face2 .content p {
-    margin: 0;
-    padding: 0;
-}
-
-.contenedor-soft .card-soft .face.face2 .content a {
-    margin: 15px 0 0;
-    display: inline-block;
-    text-decoration: none;
-    font-weight: 900;
-    color: #333;
-    padding: 5px;
-    border: 1px solid #333;
-}
-
-.contenedor-soft .card-soft .face.face2 .content a:hover {
-    background: #333;
-    color: #fff;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: auto;
+    width: 80%;
 }
 
 /*soft skills final*/
+
 
 .contenedor {
     width: 100%;
@@ -458,14 +632,14 @@ section {
 .course {
     background-color: #d1a7ff;
     border-radius: 10px;
-    box-shadow: 4px 3px 10px 2px cornflowerblue;
+    box-shadow: 5px 5px 30px 15px rgb(0 0 0 / 53%);
     display: flex;
     max-width: 100%;
     margin: auto;
     margin-bottom: 2vh;
     overflow: hidden;
-    width: 700px;
-    height: 26vh;
+    width: 720px;
+    height: 200px;
 }
 
 .course-preview {
@@ -473,6 +647,7 @@ section {
     color: #fff;
     padding: 30px;
     max-width: 250px;
+    display: flex;
 }
 
 .course-preview a {
@@ -484,10 +659,15 @@ section {
     text-decoration: none;
 }
 
+
+
 .course-info {
-    padding: 30px;
+    padding: 0px;
     position: relative;
     width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
 }
 
 .progress-container {
@@ -542,6 +722,7 @@ section {
 
 .visitBtn {
     text-align: end;
+    align-self: center;
 }
 
 .collapsed {
@@ -572,4 +753,307 @@ section {
     --bs-accordion-active-color: aliceblue;
 }
 
+#head1,#head2,#head3,#head4, #head5 {
+    opacity: 0;
+}
+#head1 {
+    -webkit-animation: fadeIn 1 3s ease-in forwards;
+    -moz-animation: fadeIn 1 3s ease-in forwards;
+    -o-animation: fadeIn 1 3s ease-in forwards;
+    animation: fadeIn 1 3s ease-in forwards;
+    -webkit-animation-delay: 0.5s;
+    -moz-animation-delay: 0.5s;
+    -o-animation-delay: 0.5s;
+    animation-delay: 0.5s;
+}
 
+#head2 {
+    -webkit-animation: fadeIn 1 3s ease-in forwards;
+    -moz-animation: fadeIn 1 3s ease-in forwards;
+    -o-animation: fadeIn 1 3s ease-in forwards;
+    animation: fadeIn 1 3s ease-in forwards;
+    -webkit-animation-delay: 1.5s;
+    -moz-animation-delay: 1.5s;
+    -o-animation-delay: 1.5s;
+    animation-delay: 1.5s;
+}
+
+#head3 {
+    -webkit-animation: fadeIn 1 3s ease-in forwards;
+    -moz-animation: fadeIn 1 3s ease-in forwards;
+    -o-animation: fadeIn 1 3s ease-in forwards;
+    animation: fadeIn 1 3s ease-in forwards;
+    -webkit-animation-delay: 2.5s;
+    -moz-animation-delay: 2.5s;
+    -o-animation-delay: 2.5s;
+    animation-delay: 2.5s;
+}
+
+#head4 {
+    -webkit-animation: fadeIn 1 3s ease-in forwards;
+    -moz-animation: fadeIn 1 3s ease-in forwards;
+    -o-animation: fadeIn 1 3s ease-in forwards;
+    animation: fadeIn 1 3s ease-in forwards;
+    -webkit-animation-delay: 3.5s;
+    -moz-animation-delay: 3.5s;
+    -o-animation-delay: 3.5s;
+    animation-delay: 3.5s;
+}
+
+#head5 {
+    -webkit-animation: fadeIn 1 3s ease-in forwards;
+    -moz-animation: fadeIn 1 3s ease-in forwards;
+    -o-animation: fadeIn 1 3s ease-in forwards;
+    animation: fadeIn 1 3s ease-in forwards;
+    -webkit-animation-delay: 4.5s;
+    -moz-animation-delay: 4.5s;
+    -o-animation-delay: 4.5s;
+    animation-delay: 4.5s;
+}
+
+h6 {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.course-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30%;
+}
+
+@-webkit-keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@-moz-keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@-o-keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@media screen and (max-width: 1530px) {
+    #expEd {
+        flex-direction: column;
+    }
+
+    .course{
+        height: 220px;
+    }
+
+    .introText {
+        padding-left: 0;
+    }
+
+    .aboutContainer {
+        padding-right: 0;
+    }
+}
+
+@media screen and (max-width: 660px) {
+    .introText {
+        display: none;
+    }
+
+    #head4 {
+    -webkit-animation-delay: 0.5s;
+    -moz-animation-delay: 0.5s;
+    -o-animation-delay: 0.5s;
+    animation-delay: 0.5s;
+    }
+
+    #head5 {
+    -webkit-animation-delay: 1.5s;
+    -moz-animation-delay: 1.5s;
+    -o-animation-delay: 1.5s;
+    animation-delay: 1.5s;
+    }
+
+    .aboutMeText {
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .course-title {
+        height: 30%;
+        width: 100%;
+        background-color: #4d45b3;
+        justify-content: center;
+        display: flex;
+        align-items: center;
+    }
+
+    .course-info {
+        padding: 0;
+    }
+
+    .expText {
+        color: black;
+        margin: auto;
+        width: 90%;
+        height: 70%;
+    }
+
+    .course-preview {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 1569px) {
+    .lineBoxF {
+        height: 214px;
+    }
+}
+
+@media screen and (max-width: 1319px) {
+    .lineBoxB {
+        height: 214px;
+    }
+}
+
+@media screen and (max-width: 631px) {
+    .lineBoxB, .lineBoxF {
+        height: 321px;
+    }
+}
+
+@media screen and (max-width: 910px) {
+    .card {
+        width: 150px;
+        height: 150px;
+    }
+
+    .card .card_image img {
+        width: 65%;
+        height: 65%;
+    }
+}
+
+@media screen and (max-width: 680px) {
+    .card {
+        width: 150px;
+        height: 150px;
+        border-radius: 23px;
+    }
+
+    .card .card_image img {
+        width: 65%;
+        height: 65%;
+    }
+
+    .card .card_title {
+        font-size: 20px;
+        margin-top: -42px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .card {
+        width: 120px;
+        height: 50px;
+        border-radius: 23px;
+    }
+
+    .card .card_image img {
+        display:none;
+    }
+
+    .card .card_title {
+        font-size: 20px;
+        margin-top: -42px;
+    }
+    
+    .lineBoxB, .lineBoxF {
+        height: 150px;
+    }
+
+    .subTitulo {
+        margin: 10px;
+    }
+
+}
+
+@media screen and (max-width: 800px) {
+    .contenedorSoft {
+        width: 90%;
+    }
+    
+    .card-soft {
+        height: 220px;
+        width: 150px;
+    }
+
+    .caraFrontal {
+        height: 150px;
+        width: 150px;
+    }
+
+    .imgSoft img {
+        max-width: 64px;
+    }
+
+    .cardTitulo h3{
+        font-size: 20px;
+    }
+
+    .caraAtras {
+        height: 150px;
+        width: 150px;
+    }
+
+    .caraAtras p {
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .caraAtras {
+        height: 148px;
+        width: 148px;
+        margin-left: 1px;
+        margin-top: 1px;
+    }
+}
+
+@media screen and (max-width: 991px) {
+    .proyLogo {
+        display: none;
+    }
+
+    .proyectoText {
+        padding-left: 0px;
+    }
+
+}
