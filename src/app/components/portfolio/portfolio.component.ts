@@ -1,6 +1,6 @@
 import { AfterViewInit, Component, ViewChildren, QueryList } from '@angular/core';
 import { faListAlt } from '@fortawesome/free-regular-svg-icons';
-import { faInstagram, faFacebook, faTwitter, faGithub, faLinkedin, faGoogle} from '@fortawesome/free-brands-svg-icons'
+import { faInstagram, faFacebook,  faGithub, faLinkedin, faGoogle} from '@fortawesome/free-brands-svg-icons'
 @Component({
   selector: 'app-portfolio',
   templateUrl: './portfolio.component.html',
@@ -24,7 +24,6 @@ export class PortfolioComponent implements AfterViewInit {
     let i = 0;
     let throttle = 1; // 0-1
     let htmlElements = this.childrens.map(element => element);
-    console.log(htmlElements);
     let intro = htmlElements[0];
     let progressbar = htmlElements[1];
     let count = htmlElements[2];
