@@ -1,6 +1,5 @@
 import { AfterViewInit, Component, ViewChildren, QueryList } from '@angular/core';
-import { faListAlt } from '@fortawesome/free-regular-svg-icons';
-import { faInstagram, faFacebook,  faGithub, faLinkedin, faGoogle} from '@fortawesome/free-brands-svg-icons'
+import {faGithub, faLinkedin, faGoogle, faWhatsapp} from '@fortawesome/free-brands-svg-icons'
 @Component({
   selector: 'app-portfolio',
   templateUrl: './portfolio.component.html',
@@ -8,9 +7,7 @@ import { faInstagram, faFacebook,  faGithub, faLinkedin, faGoogle} from '@fortaw
 })
 export class PortfolioComponent implements AfterViewInit {
 
-  faListAlt = faListAlt;
-  faInstagram= faInstagram;
-  faFacebook = faFacebook ;
+  faWhatsapp = faWhatsapp
   faGithub   = faGithub   ;
   faLinkedin = faLinkedin ;
   faGoogle = faGoogle;
