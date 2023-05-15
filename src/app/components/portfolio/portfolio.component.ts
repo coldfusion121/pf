@@ -28,7 +28,7 @@ export class PortfolioComponent implements AfterViewInit {
     let aboutMeText = htmlElements[4];
     let spaceEven = htmlElements[5];
 
-    console.log(aboutMeText);
+
     (function draw(this: any) {
       if (i <= 100) {
         let r = Math.random();
